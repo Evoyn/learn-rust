@@ -3,6 +3,7 @@ fn main() {
 
     // scalar type int,float,bool,char
 
+    // Integer
     //signed and unsigned integer
     // i8,u8,i16,u16,i32,u32,i64,u64,i128,u128,isize,usize
 
@@ -25,6 +26,10 @@ fn main() {
     let size: usize = 255;
     println!("nilai size: {}", size);
 
-    //float
+    // Float
     // f32 (6-9 digit dibelakang ,),f64 (15-17 digit dibelakang ,)
+
+    // String
+    print!("wwwwwwwww"); //string literal
+    print!("wwwwwww,\nqqqqqqq,\"wokwokwok\"") //string literal with special character, banyak cari sendiri dah
 }
