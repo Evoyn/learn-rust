@@ -31,5 +31,7 @@ fn main() {
 
     // String
     print!("wwwwwwwww"); //string literal
-    print!("wwwwwww,\nqqqqqqq,\"wokwokwok\"") //string literal with special character, banyak cari sendiri dah
+    print!("wwwwwww,\nqqqqqqq,\"wokwokwok\", C:\\Nebu\\Rust"); //string literal with special character, banyak cari sendiri dah
+    let test_raw: &str = r"This is a raw string"; //raw string literal "no special character"
+    println!("\n{}", test_raw);
 }
