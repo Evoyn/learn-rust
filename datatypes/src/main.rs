@@ -34,4 +34,10 @@ fn main() {
     print!("wwwwwww,\nqqqqqqq,\"wokwokwok\", C:\\Nebu\\Rust"); //string literal with special character, banyak cari sendiri dah
     let test_raw: &str = r"This is a raw string"; //raw string literal "no special character"
     println!("\n{}", test_raw);
+    // Methods
+
+    // method is function that associated with object
+    // intinya built in function yang nempel di tipe data tertentu
+    let test_method: i8 = -15;
+    println!("test method {}", test_method.abs())
 }
