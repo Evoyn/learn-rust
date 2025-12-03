@@ -1,3 +1,5 @@
+use std::f64::consts::PI;
+
 fn main() {
     println!("Data Types");
 
@@ -28,14 +30,16 @@ fn main() {
 
     // Float
     // f32 (6-9 digit dibelakang ,),f64 (15-17 digit dibelakang ,)
+    const PI_VALUE: f64 = PI;
+    println!("nilai pi_value: {}", PI_VALUE);
 
     // String
     print!("wwwwwwwww"); //string literal
     print!("wwwwwww,\nqqqqqqq,\"wokwokwok\", C:\\Nebu\\Rust"); //string literal with special character, banyak cari sendiri dah
     let test_raw: &str = r"This is a raw string"; //raw string literal "no special character"
     println!("\n{}", test_raw);
-    // Methods
 
+    // Methods
     // method is function that associated with object
     // intinya built in function yang nempel di tipe data tertentu
     let test_method: i8 = -15;
