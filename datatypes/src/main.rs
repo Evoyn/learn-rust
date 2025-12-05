@@ -32,6 +32,9 @@ fn main() {
     // f32 (6-9 digit dibelakang ,),f64 (15-17 digit dibelakang ,)
     const PI_VALUE: f64 = PI;
     println!("nilai pi_value: {}", PI_VALUE);
+    // format specifier
+    println!("nilai pi_value_format: {PI_VALUE:.2}");
+    println!("nilai pi_value_format: {0:.2}", PI_VALUE);
 
     // String
     print!("wwwwwwwww"); //string literal
@@ -43,5 +46,29 @@ fn main() {
     // method is function that associated with object
     // intinya built in function yang nempel di tipe data tertentu
     let test_method: i8 = -15;
-    println!("test method {}", test_method.abs())
+    println!("test method {}", test_method.abs());
+
+    //Casting Types
+    // int bs jd float, float bs jd int, int bs jd int lain, float bs jd float lain
+    let metercasting: i32 = 1000;
+    let meter_i8: u8 = metercasting as u8; //jadi 232 krna melebihi batas i8
+    println!("nilai meter_i8: {}", meter_i8);
+
+    //Math Operation
+    let tambah: i32 = 5 + 10;
+    let kurang: i32 = 95 - 4;
+    let kali: i32 = 4 * 30;
+    let bagi: f64 = 56.7 / 32.2;
+    let modulus: i32 = 43 % 5;
+    println!(
+        "tambah: {}, kurang: {}, kali: {}, bagi: {:.2}, modulus: {}",
+        tambah, kurang, kali, bagi, modulus
+    );
+
+    //Augmented Assignment Operations
+    let mut augmented: i32 = 10;
+    augmented += 5; // augmented = augmented + 5
+                    // augmented++ or -- not supported in Rust
+    augmented *= 2;
+    println!("augmented after += 5: {}", augmented);
 }
