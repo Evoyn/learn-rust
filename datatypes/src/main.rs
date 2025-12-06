@@ -71,4 +71,27 @@ fn main() {
                     // augmented++ or -- not supported in Rust
     augmented *= 2;
     println!("augmented after += 5: {}", augmented);
+
+    //Bolean Type
+    let is_true: bool = true;
+    let is_false: bool = false;
+    println!("is_true: {}, is_false: {}", is_true, is_false);
+
+    //Bolean Inversion
+    let mut is_active: bool = true;
+    println!("is_active before inversion: {}", is_active);
+    is_active = !is_active; //inversion
+    println!("is_active after inversion: {}", is_active);
+
+    //Equality and Comparison Operations
+    println!("sama ga {}", "Kue" == "Air");
+    println!("beda ga {}", 10 != 5);
+    println!("lebih besar {}", 10 > 5);
+    println!("sama dengan {}", augmented == 30); // kl 5 == 5 nnti kena warning krna rust ngira ngecompare A == A
+
+    // And, Or Operations
+    let inibenar: bool = true;
+    let inisalah: bool = false;
+    println!("AND operation: {}", inibenar && inisalah); // true jika kedua
+    println!("OR operation: {}", inibenar || inisalah); // true jika salah satu
 }
