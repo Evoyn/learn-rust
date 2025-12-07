@@ -94,4 +94,53 @@ fn main() {
     let inisalah: bool = false;
     println!("AND operation: {}", inibenar && inisalah); // true jika kedua
     println!("OR operation: {}", inibenar || inisalah); // true jika salah satu
+
+    // Chartype
+    // can be only 1 character and single quotes
+    let karakter: char = 'A';
+    let karakter_unicode: char = '😊';
+    println!(
+        "karakter: {}, karakter_unicode: {}",
+        karakter, karakter_unicode
+    );
+
+    //============================================
+    // Compound Types
+
+    //Array
+    // Must have same data type and fixed size
+    let array_angka: [i32; 5] = [1, 2, 3, 4, 5]; //tipe data [type;size]
+    println!("array_angka index 0: {}", array_angka[0]);
+
+    //Traits
+    // Traits are used to define shared behavior in an abstract way.
+    // They are similar to interfaces in other programming languages.
+    // Display trait {}
+    println!("display trait: {}", karakter);
+    // Debug trait
+    println!("array_angka debug trait: {:?}", array_angka);
+    println!("array_angka debug trait: {:#?}", array_angka);
+
+    //dbg! macro
+    // The dbg! macro is a convenient way to print debug information to the console.
+    // lebih canggih dari println!("{:?}")
+    dbg!(array_angka);
+
+    // Tuple type
+    // can have different data types and fixed size
+    let tuple_data: (i32, f64, char) = (500, 6.4, 'Z');
+    println!("tuple_data index 1: {}", tuple_data.1);
+
+    //Ranges and range iterations
+    let range_data: std::ops::Range<i32> = 1..5; // 1 to 4
+    let range_data2: std::ops::RangeInclusive<i32> = 1..=5; // 1 to 5
+    println!("{range_data:?}");
+    println!("{range_data2:?}");
+    // output pake loop klo mau liat 1,2,3...
+    for i in range_data {
+        println!("range_data loop value: {}", i);
+    }
+
+    //Generic
+    // Generics allow you to write flexible and reusable code by enabling types to be parameters.
 }
