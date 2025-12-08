@@ -143,4 +143,8 @@ fn main() {
 
     //Generic
     // Generics allow you to write flexible and reusable code by enabling types to be parameters.
+    fn tampilkan_jenis<T: std::fmt::Debug>(data: T) {
+        println!("data: {:?}", data);
+    }
+    tampilkan_jenis(123);
 }
