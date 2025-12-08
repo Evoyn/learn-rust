@@ -147,4 +147,6 @@ fn main() {
         println!("data: {:?}", data);
     }
     tampilkan_jenis(123);
+    let month_days: std::ops::Range<u8> = 1..31;
+    tampilkan_jenis(month_days);
 }
