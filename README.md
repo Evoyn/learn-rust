@@ -1,3 +1,5 @@
+# JADI GA RUTIN GARA GARA KURSUS NIHONGO
+
 bukan repo buat ngajarin,
 ini cuma jurnal belajar gwej
 
